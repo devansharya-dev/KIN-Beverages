@@ -40,7 +40,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-[140vh] w-full bg-[#f4f4f2] overflow-hidden font-body">
+    <section id="hero" className="relative min-h-[140vh] w-full bg-[#f4f4f2] overflow-hidden font-body">
       
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Playfair+Display:italic,wght@400&family=Space+Grotesk:wght@300;400&display=swap');
