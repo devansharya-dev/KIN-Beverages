@@ -10,12 +10,11 @@ export default function HeroSection() {
     const timer = setTimeout(() => setLoaded(true), 150);
     
     let rafId;
-    let currentScrollY = window.scrollY;
 
     const updateScroll = () => {
-      // Lerp (Linear Interpolation) for buttery smooth animation
-      currentScrollY += (window.scrollY - currentScrollY) * 0.08;
-      const scrollY = currentScrollY;
+      // Lenis already interpolates scrollY globally, so custom lerp here causes double-smoothing lag.
+      // Using window.scrollY directly provides the exact smooth frame from Lenis.
+      const scrollY = window.scrollY;
       
       if (scrollWrapperRef.current) {
         const scale = Math.max(0.94, 1 - scrollY * 0.0003);

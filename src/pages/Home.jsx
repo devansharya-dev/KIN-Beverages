@@ -36,7 +36,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       
-      Wrapper to scroll over the fixed HeroSection
+      {/* Wrapper to scroll over the fixed HeroSection */}
       <div className="relative z-10 bg-[var(--color-bg)] w-full">
         <ProductSection />
         <ParallaxSection />

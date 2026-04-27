@@ -45,11 +45,11 @@ export default function ParallaxSection() {
 
         {/* MASSIVE NEW HEADLINE */}
         <div className="relative mb-20 md:mb-32">
-            <h2 className="font-heading text-[16vw] sm:text-[18vw] md:text-[15vw] lg:text-[200px] leading-[0.85] md:leading-[0.8] tracking-[-0.05em] md:tracking-[-0.08em] text-white lowercase">
+            <h2 className="font-heading text-[11vw] sm:text-[12vw] md:text-[15vw] lg:text-[200px] leading-[0.85] md:leading-[0.8] tracking-[-0.05em] md:tracking-[-0.08em] text-white lowercase">
                 Bio <br /> <span className="opacity-15">Intelligence.</span>
             </h2>
-            <div className="relative mt-6 md:mt-0 md:absolute md:top-1/2 right-0 md:right-32 md:-translate-y-1/2 text-right md:text-left">
-                <p className="font-serif italic text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[110px] text-white/40 leading-none tracking-tighter">
+            <div className="relative mt-4 md:mt-0 md:absolute md:top-1/2 right-0 md:right-32 md:-translate-y-1/2 text-right md:text-left">
+                <p className="font-serif italic text-[9vw] sm:text-[10vw] md:text-[8vw] lg:text-[110px] text-white/40 leading-none tracking-tighter">
                    The Alchemy
                 </p>
             </div>
