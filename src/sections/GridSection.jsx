@@ -45,7 +45,7 @@ export default function IngredientsSection() {
       <div className="max-w-[1800px] mx-auto mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-10">
         <div className="border-l-[1px] border-black/10 pl-6 md:pl-8">
           <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] md:tracking-[0.6em] text-black/30 block mb-4 md:mb-6">Internal Profile</span>
-          <h2 className="text-[14vw] sm:text-[12vw] md:text-[8vw] font-extrabold tracking-[-0.07em] leading-[0.8] text-[#0C0C0C] lowercase font-heading">
+          <h2 className="text-[10vw] sm:text-[11vw] md:text-[8vw] lg:text-[100px] xl:text-[120px] font-extrabold tracking-[-0.07em] leading-[0.8] text-[#0C0C0C] lowercase font-heading">
             Molecular <br/> 
             <span className="text-outline-dark opacity-20">Composition.</span>
           </h2>
