@@ -15,7 +15,7 @@ export default function Home() {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
       smooth: true,
-      smoothTouch: false, // Mobile pe native touch scroll better feel deta hai
+      smoothTouch: false, // Native touch scroll provides a better feel on mobile
     });
 
     function raf(time) {
@@ -31,7 +31,7 @@ export default function Home() {
   }, []);
 
   return (
-    // Background dark kar diya taaki premium black theme ke sath white flashes na aayein
+    // Darkened background to prevent white flashes with the premium black theme
     <div className="page-root w-full overflow-x-hidden bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen">
       <Navbar />
       <HeroSection />
