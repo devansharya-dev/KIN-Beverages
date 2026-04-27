@@ -26,7 +26,7 @@ const ingredients = [
 
 export default function IngredientsSection() {
   return (
-    <section className="w-full bg-[#F2F3EC] py-32 md:py-48 px-6 md:px-12 lg:px-20 font-body">
+    <section className="w-full bg-[#F2F3EC] py-32 md:py-48 px-6 md:px-12 lg:px-20 font-body overflow-hidden">
       
       {/* --- EXTERNAL FONTS --- */}
       <style jsx global>{`
@@ -130,7 +130,7 @@ export default function IngredientsSection() {
 
       {/* --- FOOTER ACCENT --- */}
       <div className="max-w-[1800px] mx-auto mt-40 pt-10 border-t border-black/5">
-         <p className="text-[10px] tracking-[1em] uppercase text-black/20 text-center font-body">
+         <p className="text-[10px] tracking-widest md:tracking-[1em] uppercase text-black/20 text-center font-body">
             Kin Rituals // Pure Botanical Alchemy
          </p>
       </div>

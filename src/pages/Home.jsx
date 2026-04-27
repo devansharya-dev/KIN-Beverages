@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     // Background dark kar diya taaki premium black theme ke sath white flashes na aayein
-    <div className="page-root bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen">
+    <div className="page-root w-full overflow-x-hidden bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen">
       <Navbar />
       <HeroSection />
       <ProductSection />
