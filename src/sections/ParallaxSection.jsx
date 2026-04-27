@@ -31,13 +31,13 @@ export default function ParallaxSection() {
 
       {/* --- NEW CONTENT DESIGN --- */}
       <div
-        className="relative z-10 w-full max-w-[1600px] h-full flex flex-col justify-center px-10 md:px-24"
+        className="relative z-10 w-full max-w-[1600px] h-full flex flex-col justify-center px-6 md:px-24"
         ref={contentRef}
         style={{ transform: `translateY(${contentY}px)` }}
       >
         
         {/* Top Info Bar */}
-        <div className="flex items-center gap-10 mb-24 opacity-30">
+        <div className="flex items-center gap-4 md:gap-10 mb-24 opacity-30">
             <span className="text-[10px] font-bold tracking-[0.8em] uppercase text-white">Molecular Series</span>
             <div className="h-[1px] flex-grow bg-white/20" />
             
@@ -45,7 +45,7 @@ export default function ParallaxSection() {
 
         {/* MASSIVE NEW HEADLINE */}
         <div className="relative mb-32">
-            <h2 className="font-heading text-[15vw] lg:text-[200px] leading-[0.8] tracking-[-0.08em] text-white lowercase">
+            <h2 className="font-heading text-[22vw] md:text-[15vw] lg:text-[200px] leading-[0.8] tracking-[-0.08em] text-white lowercase">
                 Bio <br /> <span className="opacity-15">Intelligence.</span>
             </h2>
             <div className="absolute top-1/2 right-0 md:right-32 -translate-y-1/2">

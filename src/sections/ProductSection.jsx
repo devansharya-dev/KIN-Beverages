@@ -66,8 +66,8 @@ export default function KinProductSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full bg-[var(--color-surface)] border border-[var(--color-surface)] rounded-[36px] overflow-hidden">
               
               {/* Stat 01: Alcohol Content */}
-              <div className="bg-[var(--color-bg)] p-10 md:p-14 flex flex-col justify-between min-h-[280px] relative">
-                <span className="text-[11px] font-bold text-[var(--color-text-muted)] absolute top-8 right-10 uppercase tracking-widest">01 / Pure</span>
+              <div className="bg-[var(--color-bg)] p-8 md:p-14 flex flex-col justify-between min-h-[280px] relative">
+                <span className="text-[11px] font-bold text-[var(--color-text-muted)] absolute top-6 right-6 md:top-8 md:right-10 uppercase tracking-widest">01 / Pure</span>
                 <div>
                   <span className="text-[64px] md:text-[80px] font-semibold tracking-tighter leading-none text-[var(--color-primary)] italic">0%</span>
                 </div>
@@ -79,8 +79,8 @@ export default function KinProductSection() {
               </div>
 
               {/* Stat 02: Ingredients */}
-              <div className="bg-[var(--color-bg)] p-10 md:p-14 flex flex-col justify-between min-h-[280px] relative">
-                <span className="text-[11px] font-bold text-[var(--color-text-muted)] absolute top-8 right-10 uppercase tracking-widest">02 / Power</span>
+              <div className="bg-[var(--color-bg)] p-8 md:p-14 flex flex-col justify-between min-h-[280px] relative">
+                <span className="text-[11px] font-bold text-[var(--color-text-muted)] absolute top-6 right-6 md:top-8 md:right-10 uppercase tracking-widest">02 / Power</span>
                 <div>
                   <span className="text-[64px] md:text-[80px] font-semibold tracking-tighter leading-none text-[var(--color-primary)]">12+</span>
                 </div>

@@ -59,17 +59,17 @@ export default function CTASection() {
         className="relative z-10 flex flex-col items-center"
       >
         {/* Postcard Container - Massive Size */}
-        <div className="relative p-8 md:p-16 bg-white shadow-[0_120px_200px_-60px_rgba(0,0,0,0.15)] rounded-[40px] md:rounded-[80px] rotate-[-2deg]">
+        <div className="relative p-6 md:p-16 bg-white shadow-[0_120px_200px_-60px_rgba(0,0,0,0.15)] rounded-[40px] md:rounded-[80px] rotate-[-2deg]">
             <img 
               src="/images/d.png" 
               alt="Kin Bottle" 
-              className="relative z-10 w-[300px] md:w-[500px] lg:w-[650px] h-auto object-contain"
+              className="relative z-10 w-[240px] sm:w-[300px] md:w-[500px] lg:w-[650px] h-auto object-contain"
             />
             {/* Soft Shadow for Grounding */}
             <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-[60%] h-5 bg-black/20 blur-3xl rounded-full scale-x-150 z-0" />
             
             {/* Top Micro-Metadata */}
-            <div className="absolute top-10 left-14 flex gap-10 opacity-20 font-body text-[10px] font-bold uppercase tracking-widest">
+            <div className="absolute top-6 left-6 md:top-10 md:left-14 flex flex-col sm:flex-row gap-2 sm:gap-10 opacity-20 font-body text-[10px] font-bold uppercase tracking-widest">
                 <span>Ref. No. 2026_D</span>
                 <span>Organic Extract</span>
             </div>
@@ -94,7 +94,7 @@ export default function CTASection() {
               </p>
               
               {/* Bottom Details Grid */}
-              <div className="mt-16 flex justify-center gap-24 font-body opacity-30">
+              <div className="mt-16 flex justify-center gap-8 md:gap-24 font-body opacity-30">
                   <div className="text-left border-l border-black pl-6">
                       <p className="text-[10px] font-bold uppercase tracking-widest mb-1">Terroir</p>
                       <p className="text-[14px] font-medium uppercase tracking-tighter">Sicily, Italy</p>

@@ -66,10 +66,10 @@ export default function IngredientsSection() {
             className={`group relative flex flex-col ${idx === 1 ? 'lg:mt-32' : ''}`}
           >
             {/* 1. IMAGE POSTCARD WRAPPER */}
-            <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[32px] bg-[#EBECE4] transition-all duration-700 ease-in-out group-hover:shadow-[0_60px_100px_-30px_rgba(0,0,0,0.12)]">
+            <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[24px] md:rounded-[32px] bg-[#EBECE4] transition-all duration-700 ease-in-out group-hover:shadow-[0_60px_100px_-30px_rgba(0,0,0,0.12)]">
               
               {/* Top Bar Labels */}
-              <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-start z-10">
+              <div className="absolute top-0 left-0 w-full p-6 md:p-8 flex justify-between items-start z-10">
                 <div className="flex flex-col gap-1">
                     <span className="text-[9px] font-black tracking-[0.3em] uppercase text-white/60 font-body">ID // {item.id}</span>
                     <span className="text-[9px] font-black tracking-[0.3em] uppercase text-white/40 font-body">Verified Organic</span>
@@ -85,7 +85,7 @@ export default function IngredientsSection() {
               />
 
               {/* Bottom Tag Overlay */}
-              <div className="absolute bottom-0 left-0 w-full p-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
+              <div className="absolute bottom-0 left-0 w-full p-6 md:p-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
                 <p className="text-[10px] font-bold uppercase tracking-[0.6em] text-white/90 font-body">
                   {item.tag}
                 </p>
