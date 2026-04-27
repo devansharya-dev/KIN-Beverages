@@ -60,7 +60,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 z-0">
             <img 
               ref={imageRef}
-              src="/images/g.png" 
+              src="/images/g.jpeg" 
               alt="Hero Background" 
               className="w-full h-full object-cover object-right md:object-center brightness-[0.85] contrast-[1.1]"
             />
