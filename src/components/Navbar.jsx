@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
@@ -7,7 +7,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [hoveredLink, setHoveredLink] = useState(null);
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -20,24 +19,10 @@ export default function Navbar() {
     setIsOpen(false);
   }, [location]);
 
-  // Handles anchor links — works from any page
-  const handleAnchorNav = (anchor) => {
-    setIsOpen(false);
-    if (location.pathname !== '/') {
-      navigate('/');
-      // Wait for Home to mount before scrolling
-      setTimeout(() => {
-        document.getElementById(anchor)?.scrollIntoView({ behavior: 'smooth' });
-      }, 400);
-    } else {
-      document.getElementById(anchor)?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const navLinks = [
-    { name: 'Home',    anchor: 'hero' },
-    { name: 'About',   anchor: 'about' },
-    { name: 'Contact', anchor: 'contact' },
+    { name: 'Home',    href: '/#hero' },
+    { name: 'About',   href: '/#about' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -55,14 +40,14 @@ export default function Navbar() {
           }`}
         >
           {/* Brand Logo */}
-          <button
-            onClick={() => handleAnchorNav('hero')}
+          <Link
+            to="/#hero"
             className="flex items-center gap-1 cursor-pointer hover:opacity-60 transition-opacity z-[110]"
           >
             <h2 className="text-[22px] md:text-[26px] font-extrabold tracking-[-0.05em] text-[#0C0C0C] font-heading">
               KIN
             </h2>
-          </button>
+          </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-2 relative">
@@ -81,9 +66,9 @@ export default function Navbar() {
             </AnimatePresence>
 
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.name}
-                onClick={() => handleAnchorNav(link.anchor)}
+                to={link.href}
                 onMouseEnter={(e) => {
                   const bounds = e.currentTarget.getBoundingClientRect();
                   const parentBounds = e.currentTarget.parentElement.getBoundingClientRect();
@@ -95,7 +80,7 @@ export default function Navbar() {
                 <span className="text-[12px] font-bold uppercase tracking-[0.3em] text-[#0C0C0C] font-body">
                   {link.name}
                 </span>
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -143,12 +128,13 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.08 * idx }}
                 >
-                  <button
-                    onClick={() => handleAnchorNav(item.anchor)}
+                  <Link
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
                     className="font-heading text-[42px] md:text-[80px] font-bold tracking-tighter text-black transition-all duration-500 hover:italic cursor-pointer outline-none"
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </motion.div>
               ))}
               <motion.div
