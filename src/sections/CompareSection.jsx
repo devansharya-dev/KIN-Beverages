@@ -7,7 +7,7 @@ const compareData = [
   { feature: 'Prep Time', kin: '~10 seconds', rtd: 'Ready', mixer: '30–60 seconds' },
   { feature: 'Customization', kin: 'Full (ratio adjustable)', rtd: 'None', mixer: 'Limited' },
   { feature: 'Functional Botanicals', kin: '✓ Shiitake, Ginger, Lemon', rtd: '✗', mixer: '✗' },
-  { feature: 'Shelf Life', kin: '45 days for now', rtd: '6–12 months', mixer: 'Varies' },
+  { feature: 'Shelf Life', kin: '45 days', rtd: '6–12 months', mixer: 'Varies' },
 ];
 
 export default function CompareSection() {

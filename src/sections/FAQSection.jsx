@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: "What is the shelf life of KIN Syrup?",
-    a: "Sealed, KIN lasts 6+ months at room temperature. Once opened, refrigerate and use within 30 days for optimal freshness. The concentrated format means less waste compared to RTD alternatives."
+    a: "Unopened, KIN lasts 45 days at room temperature. Once opened, refrigerate and use within 30 days for optimal freshness. The concentrated format means less waste compared to RTD alternatives."
   },
   {
     q: "Do you deliver outside of Delhi/NCR?",
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "Is KIN certified? Do you have FSSAI approval?",
-    a: "We are currently in the process of obtaining FSSAI certification. KIN is made with 100% natural ingredients — Shiitake, Ginger, Lemon, and other functional botanicals — with no artificial additives or preservatives."
+    a: "FSSAI certification is currently in progress. KIN is made with 100% natural ingredients — Shiitake, Ginger, Lemon, and other functional botanicals — with no artificial additives or preservatives."
   },
   {
     q: "What makes KIN different from regular syrups?",
