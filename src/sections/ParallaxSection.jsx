@@ -78,7 +78,7 @@ export default function ParallaxSection() {
 
         </div>
 
-      </div>
+      </motion.div>
 
 
 

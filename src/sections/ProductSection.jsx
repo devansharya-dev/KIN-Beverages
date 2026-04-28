@@ -43,13 +43,12 @@ export default function KinProductSection() {
               style={{ y: imgY, scale: imgScale }}
               className="rounded-[40px] overflow-hidden bg-[var(--color-surface)] aspect-[4/5] relative w-full max-w-[500px] mx-auto lg:mx-0 shadow-2xl"
             >
-
               <img 
                 src="/images/e.png" 
                 alt="KIN Functional Mushroom Syrup" 
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
           </div>
 
           {/* RIGHT: Kin Content & Stats */}
